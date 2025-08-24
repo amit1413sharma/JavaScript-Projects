@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 7: Scope & Time Functions</title>
+  <script src="JS/main.js" defer></script>
+</head>
+<body>
+  <h1>Project 7: Scope & Time-Based Methods</h1>
+
+  <!-- Global Variable -->
+  <button onclick="useGlobal()">Use Global Variable</button>
+  <p id="globalOutput"></p>
+
+  <!-- Local Variable -->
+  <button onclick="useLocal()">Use Local Variable</button>
+  <p id="localOutput"></p>
+
+  <!-- Debugging Error -->
+  <button onclick="debugFunction()">Run Function with Error</button>
+  <p id="debugOutput">Check the console for the error.</p>
+
+  <!-- Method Assignment -->
+  <h2>Time-Based Greeting</h2>
+  <p id="greeting" onclick="timeGreeting()">Click here to get a greeting based on the time of day</p>
+
+  <!-- Custom If Statement -->
+  <h2>Custom If Statement</h2>
+  <button onclick="customIfStatement()">Run Custom If Statement</button>
+  <p id="ifResult"></p>
+
+  <!-- Else Assignment -->
+  <h2>Age Checker (If...Else Example)</h2>
+  <p>Enter your age below and click the button to see if you're an adult:</p>
+  <input type="number" id="userAge" />
+  <button onclick="checkIfAdult()">Check Age</button>
+  <p id="ageCheckResult"></p>
+</body>
+</html>
