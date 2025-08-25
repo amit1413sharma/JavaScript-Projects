@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.slideshow-container {
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+}
