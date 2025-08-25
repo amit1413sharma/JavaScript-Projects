@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Switch Statement & Canvas Example</title>
+    <script src="JavaScript/JavaScript_1.js" defer></script>
+    <style>
+        /* Add border to canvas */
+        #myCanvas {
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Switch Statement Demo</h1>
+
+    <label for="choice">Choose an animal:</label>
+    <select id="choice">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="bird">Bird</option>
+        <option value="fish">Fish</option>
+        <option value="rabbit">Rabbit</option>
+    </select>
+
+    <button onclick="showAnimalSound()">Show Sound</button>
+
+    <p id="output"></p>
+
+    <h2>Animal Facts</h2>
+    <p class="animal-info">Dogs are loyal pets.</p>
+    <p class="animal-info">Cats are independent creatures.</p>
+    <p class="animal-info">Birds can fly.</p>
+
+    <button onclick="highlightFacts()">Highlight Facts</button>
+
+    <!-- Canvas element with border -->
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+
+</body>
+</html>
