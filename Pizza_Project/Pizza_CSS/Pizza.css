@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    background-color: #f5f5dc; /* Light beige background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #b22222; /* Firebrick */
+}
+
+h3 {
+    font-family: Verdana, sans-serif;
+    color: #2f4f4f; /* Dark Slate Gray */
+}
+
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333; /* Dark gray text */
+}
+
+/* Layout Containers */
+#menuBG {
+    width: 600px;
+    height: auto;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: auto;
+    overflow: auto;
+}
+
+/* Order Summary */
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 600px;
+    height: 200px;
+}
+
+/* Menu Sections */
+.left, .center, .right {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+/* Button */
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
