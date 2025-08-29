@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Timer</title>
+  
+  <!-- React and ReactDOM from CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel for JSX support -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="My_React_Code"></div>
+
+  <script type="text/babel">
+    function Counter(props) {
+      const timePassed = Math.round(props.timePassed / 100);
+      const secondsPassed = timePassed / 10 + (timePassed % 10 ? '' : '.0');
+      const text = 'My React code started running ' + secondsPassed + ' seconds ago!';
+      return <p>{text}</p>;
+    }
+
+    const startCounting = new Date().getTime();
+
+    setInterval(() => {
+      ReactDOM.createRoot(document.getElementById('My_React_Code')).render(
+        <Counter timePassed={new Date().getTime() - startCounting} />
+      );
+    }, 50);
+  </script>
+</body>
+</html>
